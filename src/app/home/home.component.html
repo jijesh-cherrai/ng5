@@ -1,0 +1,14 @@
+<div class="col container">
+  <div class="alert"> Total items in the list : {{ itemCount}}</div>
+  <form>
+    <input name="item" id="item" type="text" autofocus="autofocus" placeholder="Item" [(ngModel)]="itemText">
+    <input type="submit" class="btn" [value]="btnText" (click)="addItem()" />
+  </form>
+</div>
+<div class="col container" [@items]="items.length">
+  <div style="width: 50%" >
+    <p class="item" *ngFor="let item of items; let i = index;" (click)="removeItem(i);">
+      {{item}}
+    </p>
+  </div>
+</div>

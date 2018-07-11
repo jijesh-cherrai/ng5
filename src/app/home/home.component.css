@@ -1,0 +1,14 @@
+.col{
+    display: grid;
+    width: 100%;
+}
+
+p.item{
+    border-left: 3px solid red;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 1px;
+    background: #f5b3b3b0;
+    font-size: 17px;
+    font-weight: bold;
+}
